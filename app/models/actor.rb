@@ -14,6 +14,6 @@ class Actor < ActiveRecord::Base
   end
 
   def self.full_name
-    Actor.find_or_create_by(:first_name, :last_name)
-  end
+    Actor.first_name.last_name
+ end
 end
