@@ -14,6 +14,5 @@ class Actor < ActiveRecord::Base
   end
 
   def self.full_name
-    Actor.first_name.last_name
- end
+  end
 end
