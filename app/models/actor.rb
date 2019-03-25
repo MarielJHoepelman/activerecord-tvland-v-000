@@ -13,7 +13,7 @@ class Actor < ActiveRecord::Base
     self.characters
   end
 
-  def full_name
-    self.name
+  def self.full_name
+    self.name = Actor.find_or_create_by(:first_name, :last_name)
   end
 end
