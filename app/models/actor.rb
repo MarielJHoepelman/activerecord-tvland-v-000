@@ -11,6 +11,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    #pending
+      binding.pry
   end
 end
